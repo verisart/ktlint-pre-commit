@@ -1,4 +1,5 @@
-#!/usr/bin/env sh
+#!/bin/bash
+DIR="$(dirname "$0")"
 set -e
-./ktlint -F $@ && git add $@
+"$DIR/ktlint" -F $@ && git add $@
 
